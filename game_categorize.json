@@ -1,0 +1,42 @@
+{
+    "pc": {
+        "steam_hardware": [
+            "Steam Machine",
+            "Steam Deck",
+            "Steam Deck OLED"
+        ]
+    },
+    "nintendo": {
+        "home_consoles": [
+            "Nintendo Entertainment System",
+            "Super Nintendo Entertainment System",
+            "Nintendo 64",
+            "Nintendo GameCube",
+            "Wii",
+            "Wii U",
+            "Nintendo Switch",
+            "Nintendo Switch OLED"
+        ],
+        "handhelds": [
+            "Game Boy",
+            "Game Boy Color",
+            "Game Boy Advance",
+            "Game Boy Advance SP",
+            "Nintendo DS",
+            "Nintendo 3DS"
+        ]
+    },
+    "sony": {
+        "home_consoles": [
+            "PlayStation",
+            "PlayStation 2",
+            "PlayStation 3",
+            "PlayStation 4",
+            "PlayStation 5"
+        ],
+        "handhelds": [
+            "PlayStation Portable",
+            "PlayStation Vita"
+        ]
+    }
+}
