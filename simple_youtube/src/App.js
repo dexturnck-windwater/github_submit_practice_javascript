@@ -12,6 +12,10 @@ function App() {
 
   const [color_user_1, setC1] = useState("profileG")
 
+  const [commentColor, setColor] = useState("commentG")
+
+  const [comment, setComment] = useState("G")
+
   const [user1, setU1] = useState("Garreith")
 
   const [user2, setU2] = useState("username_1")
@@ -41,6 +45,8 @@ function App() {
         setU2("username_2")
       }
       setU1("username_1")
+      setColor("comment1")
+      setComment("1")
       setI("1")
       setC1("profile1")
     }
@@ -52,6 +58,8 @@ function App() {
         setU2("username_1")
       }
       setU1("username_2")
+      setColor("comment2")
+      setComment("2")
       setI("2")
       setC1("profile2")
     }
@@ -63,6 +71,8 @@ function App() {
         setU2("username_2")
       }
       setU1("Garreith")
+      setColor("commentG")
+      setComment("G")
       setI("G")
       setC1("profileG")
     }
@@ -79,6 +89,8 @@ function App() {
         setU3("username_2")
       }
       setU1("username_1")
+      setColor("comment1")
+      setComment("1")
       setI("1")
       setC1("profile1")
     }
@@ -90,6 +102,8 @@ function App() {
         setU3("username_1")
       }
       setU1("username_2")
+      setColor("comment2")
+      setComment("2")
       setI("2")
       setC1("profile2")
     }
@@ -101,6 +115,8 @@ function App() {
         setU3("username_2")
       }
       setU1("Garreith")
+      setColor("commentG")
+      setComment("G")
       setI("G")
       setC1("profileG")
     }
@@ -114,6 +130,7 @@ function App() {
 
   return (
     <div>
+
         <button className='b1'>▶</button>
         <hr className='hr1'></hr>
         <label className='lb1'>video title</label>
@@ -128,6 +145,11 @@ function App() {
         <button className='b7'>⇩ Download</button>
         <button className='b8'>...</button>
         <button className={color_user_1} onClick={enable_change_profile}>{icon}</button>
+        <hr className='hr2'></hr>
+        <button className={commentColor}>{comment}</button>
+        <input className='input1'></input>
+        <button className='b9'>Cancel</button>
+        <button className='b10'>Comment</button>
         {tf === true? 
         <div className='div1'>
           <button onClick={change_profile2}>{user2}</button>
@@ -147,7 +169,9 @@ function App() {
           <img src={logo}></img>
         </div>
         :<div></div>}
-        <div></div>
+        <div className='div3'>
+          <label>.</label>
+        </div>
     </div>
   );
 }
