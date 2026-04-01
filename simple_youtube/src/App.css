@@ -319,3 +319,119 @@
   width: 90px;
   height: 40px;
 }
+
+.lb4 {
+  position: absolute;
+  top: 2000px;
+  left: 100px;
+}
+
+.div4 {
+  position: absolute;
+  top: 850px;
+  left: 500px;
+}
+
+.AYS {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.YES {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.NO {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.div5 {
+  position: absolute;
+  top: 830px;
+  left: 1475px;
+}
+
+.Language {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.Dub {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.div6 {
+  position: absolute;
+  top: 630px;
+  left: 1475px;
+}
+
+.Eng {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.Ind {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.Chn {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.div7 {
+  position: absolute;
+  top: 960px;
+  left: 1475px;
+}
+
+.ON {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.OFF {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
