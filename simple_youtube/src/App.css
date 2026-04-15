@@ -435,3 +435,28 @@
   background-color: black;
   color: white;
 }
+
+.div8 {
+  position: relative;
+  top: 1175px;
+  left: 100px;
+  font-size: x-large;
+}
+
+.delete {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.edit {
+  border-radius: 50px;
+  border-style: hidden;
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}

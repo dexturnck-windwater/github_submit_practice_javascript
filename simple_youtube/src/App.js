@@ -56,29 +56,6 @@ function App() {
 
   const [LIKES, setLIKES] = useState("9999")
 
-  /*const [example_USERLIST, setEXAMPLE] = useState(
-    [
-      {name:"nnn",
-        id:"ll"
-      }
-    ]
-
-  )
-
-  /*useEffect(()  => {
-    fetch("/txt1.txt")
-    .then(res => res.text())
-    .then(data => {
-      console.log(data)
-      const lines = data.split("\n");
-      console.log(lines)
-      setCount(lines.length)
-      setNameList(lines)
-      console.log(nameList)
-
-    })
-  }, [])*/
-
   useEffect(()  => {
     fetch("/comment_users.txt")
     .then(res => res.text())
@@ -368,10 +345,10 @@ function App() {
         :<div></div>}
 
         {tf4 === true? comment_list.map((item) => (
-          <div key={item} className="div4">
+          <div key={item} className="div8">
             <label>{item}</label>
-            <button onClick={(event) => handleDelete(item, event)}>delete</button>
-            <button onClick={() => handleEdit()}>edit</button>
+            <button onClick={(event) => handleDelete(item, event)} className='delete'>delete</button>
+            <button onClick={() => handleEdit()} className='edit'>edit</button>
           </div>
         )):<div></div>}
 
