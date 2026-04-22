@@ -61,3 +61,36 @@
   left: 400px;
   top: -100px;
 }
+
+.input1 {
+  position: relative;
+  left: 550px;
+  border-width: 3px;
+  border-style: groove;
+  top: -130px;
+  width: 100px;
+  height: 50px;
+  font-size: xx-large;
+}
+
+.button1 {
+  position: relative;
+  left: 565px;
+  top: -147px;
+  font-size: 30px;
+}
+
+.button2 {
+  position: relative;
+  left: 519px;
+  top: -110px;
+  font-size: 30px;
+}
+
+.button3 {
+  position: relative;
+  left: 350px;
+  top: -50px;
+  font-size: 30px;
+  width: 170px;
+}
