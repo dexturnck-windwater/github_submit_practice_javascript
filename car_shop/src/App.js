@@ -4,72 +4,100 @@ import { useState } from 'react';
 
 function App() {
 
-  const [input1, setInput1] = useState({amount : 0, stock : 15})
-
-  const [input2, setInput2] = useState({amount : 0, stock : 20})
-
-  const [input3, setInput3] = useState({amount : 0, stock : 10})
+  const [car_list, setCarList] = useState([
+    {"file" : "HRV.png", "price" : 24000, "stock" : 15, "amount" : 0, "index" : "0", "brand" : "Honda", "type" : "Hybrid"},
+    {"file" : "Innova.png", "price" : 26000, "stock" : 20, "amount" : 0, "index" : "1", "brand" : "Toyota", "type" : "Electric"},
+    {"file" : "CX-5.png", "price" : 40000, "stock" : 10, "amount" : 0, "index" : "2", "brand" : "Mazda", "type" : "Hybrid"}
+  ])
 
   function Car(props){
 
     function add(){
-      if (props.index === "1"){
-        setInput1({amount : input1.amount + 1, stock : input1.stock})
+      let tempList = []
+
+      for (let x = 0; x < car_list.length; x++){
+        tempList.push(car_list[x])
+      }
+
+      if (props.index === "0"){
+        tempList[0].amount += 1
+      }
+      else if (props.index === "1"){
+        tempList[1].amount += 1
       }
       else if (props.index === "2"){
-        setInput2({amount : input2.amount + 1, stock : input2.stock})
+        tempList[2].amount += 1
       }
-      else if (props.index === "3"){
-        setInput3({amount : input3.amount + 1, stock : input3.stock})
-      }
+
+      setCarList(tempList)
     }
 
     function minus(){
-      if (props.index === "1" && props.count !== 0){
-        setInput1({amount : input1.amount - 1, stock : input1.stock})
+      let tempList = []
+
+      for (let x = 0; x < car_list.length; x++){
+        tempList.push(car_list[x])
+      }
+
+      if (props.index === "0" && props.count !== 0){
+        tempList[0].amount -= 1
+      }
+      else if (props.index === "1" && props.count !== 0){
+        tempList[1].amount -= 1
       }
       else if (props.index === "2" && props.count !== 0){
-        setInput2({amount : input2.amount - 1, stock : input2.stock})
+        tempList[2].amount -= 1
       }
-      else if (props.index === "3" && props.count !== 0){
-        setInput3({amount : input3.amount - 1, stock : input3.stock})
-      }
+
+      setCarList(tempList)
     }
 
     function cart(){
-      if (props.index === "1"){
+      let tempList = []
+
+      for (let x = 0; x < car_list.length; x++){
+        tempList.push(car_list[x])
+      }
+
+      if (props.index === "0"){
         if (props.count <= props.stock){
-          setInput1({amount : 0, stock : input1.stock - input1.amount})
+          tempList[0].stock = tempList[0].stock - tempList[0].amount
         }
         else{
           alert("Not enough stock for HRV")
         }
       }
-      else if (props.index === "2"){
+      else if (props.index === "1"){
         if (props.count <= props.stock){
-          setInput2({amount : 0, stock : input2.stock - input2.amount})
+          tempList[1].stock = tempList[1].stock - tempList[1].amount
         }
         else{
           alert("Not enough stock for Innova")
         }
       }
-      else if (props.index === "3"){
+      else if (props.index === "2"){
         if (props.count <= props.stock){
-          setInput3({amount : 0, stock : input3.stock - input3.amount})
+          tempList[2].stock = tempList[2].stock - tempList[2].amount
         }
         else{
           alert("Not enough stock for CX-5")
         }
       }
+
+      setCarList(tempList)
     }
 
     return (
       <div className='div1'>
         <img src={props.file} className='img1'></img>
         <br></br>
-        <label className='label1'>Price: {props.price}</label>
+        <label className='label1'>Brand: {props.brand}</label>
         <br></br>
-        <label className='label2'>Stock: {props.stock}</label>
+        <label className='label1'>Type  : {props.type}</label>
+        <br></br>
+        <label className='label1'>Price : {props.price}</label>
+        <br></br>
+        <label className='label1'>Stock: {props.stock}</label>
         <input className='input1' value={props.count}></input>
         <button className='button1' onClick={add}>▲</button>
         <button className='button2' onClick={minus}>▼</button>
@@ -80,9 +108,9 @@ function App() {
 
   return (
     <div className="App">
-      <Car file="HRV.png" price="$24000" stock={input1.stock} count={input1.amount} index="1" />
-      <Car file="Innova.png" price="$26000" stock={input2.stock} count={input2.amount} index="2" />
-      <Car file="CX-5.png" price="$40000" stock={input3.stock} count={input3.amount} index="3" />
+      {
+        car_list.map(cars => <Car file={cars.file} price={"$" + cars.price} stock={cars.stock} count={cars.amount} index={cars.index} brand={cars.brand} type={cars.type} />)
+      }
     </div>
   );
 }

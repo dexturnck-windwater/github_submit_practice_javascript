@@ -47,7 +47,7 @@
   width: 350px;
   height: 200px;
   position: relative;
-  top: 50px;
+  top: 100px;
 }
 
 .label1 {
@@ -67,7 +67,7 @@
   left: 550px;
   border-width: 3px;
   border-style: groove;
-  top: -130px;
+  top: -210px;
   width: 100px;
   height: 50px;
   font-size: xx-large;
@@ -76,21 +76,21 @@
 .button1 {
   position: relative;
   left: 565px;
-  top: -147px;
+  top: -230px;
   font-size: 30px;
 }
 
 .button2 {
   position: relative;
   left: 519px;
-  top: -110px;
+  top: -190px;
   font-size: 30px;
 }
 
 .button3 {
   position: relative;
   left: 350px;
-  top: -50px;
+  top: -140px;
   font-size: 30px;
   width: 170px;
 }
