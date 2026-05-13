@@ -94,3 +94,33 @@
   font-size: 30px;
   width: 170px;
 }
+
+.select1 {
+  font-size: x-large;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+
+.select2 {
+  font-size: x-large;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+
+.button4 {
+  position: absolute;
+  font-size: x-large;
+  background-color: white;
+  top: 0px;
+  left: 380px;
+}
+
+.button5 {
+  position: absolute;
+  font-size: x-large;
+  background-color: white;
+  top: 0px;
+  left: 480px;
+}
